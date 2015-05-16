@@ -71,9 +71,10 @@ hex(X) ->
           16#4635, 16#4636, 16#4637, 16#4638, 16#4639, 16#4641, 16#4642,
           16#4643, 16#4644, 16#4645, 16#4646}).
 
+-ifdef(TEST).
 bin_to_hex_test() ->
     ?assertEqual(<<"BAB34E">>, bin_to_hex(<<"\272\263N">>)).
 
 md5_test() ->
     ?assertEqual(<<"ACBD18DB4CC2F85CEDEF654FCCC4A4D8">>, md5(<<"foo">>)).
-
+-endif.
